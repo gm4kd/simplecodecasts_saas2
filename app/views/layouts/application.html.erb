@@ -26,13 +26,26 @@
     <div class="collapse navbar-collapse" id="main-nav-collapse">
       <ul class="nav navbar-nav navbar-right">
         <li><%= link_to "About", about_path %></li>
+<<<<<<< HEAD
+=======
+        <li><%= link_to "Contact me", new_contact_path %></li>
+>>>>>>> contact_form
       </ul>
 
     </div><!-- /.navbar-collapse -->
   </div>
 </nav>
+<<<<<<< HEAD
   
 <div class='container'>
+=======
+  
+<div class='container'>
+  <% flash.each do |key, value| %>
+    <%= content_tag :div, value, class: "alert alert-#{key}" %>
+  <% end %>
+  
+>>>>>>> contact_form
   <%= yield %>
 </div>
 
