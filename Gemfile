@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 
-ruby '2.1.2'
+
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.6'
@@ -16,7 +16,7 @@ gem 'font-awesome-sass', '4.2.0'
 
 # Use postgresql as the database for production
 group :production do
-  gem 'pg', '~> 0.20.0'
+  gem 'pg', '~> 0.11'
   gem 'rails_12factor'
 end
 
