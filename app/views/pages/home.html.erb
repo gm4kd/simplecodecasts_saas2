@@ -1,4 +1,40 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <div >
   <h1>Welcome To Gaston's World</h1>
   <h3>the resume of Gaston Moliva basketball career</h3>
+</div>
+<div class="row">
+  <div class="col-md-6">
+    <div class="well">
+      <h2 class="text-centerAmateur Membership">Amateur Membership</h2>
+      <h4>Sign up for the free and get basic access to the my limited world.</h4>
+      <br/>
+      <%= link_to "Sign up with AMATEUR", new_user_registration_path, class: 'btn btn-primary btn-lg btn-block' %>
+    </div>
+  </div>
+  
+     <div class="col-md-6">
+       <div class="well">
+         <h2 class="text-centerAmateur Membership">Pro Membership</h2>
+         <h4>Sign up for the pro account for $10/month and get total access to my entire world.</h4>
+         <%= link_to "Sign up with PRO", new_user_registration_path, class: 'btn btn-success btn-lg btn-block' %>
+       </div>
+    </div>
 </div>
