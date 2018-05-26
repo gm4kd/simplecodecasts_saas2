@@ -1,13 +1,11 @@
 class ProfilesController < ApplicationController
-  
   def new
     # form where a user can fill out their own profile form
     @user = User.find( params[:user_id] )
-    @profile =  @user.build_profile 
-    
+    @profile =  @user.build_profile
   end
   
-  def
+  def create
     @user = User.find( params[:user_id] )
     @profile = @user.build_profile(profile_params)
     if @profile.save
@@ -15,6 +13,7 @@ class ProfilesController < ApplicationController
       redirect_to user_path( params[:user_id])
     else
       render action: :new
+    end
   end
   
   private
