@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   devise_for :users, controllers: {registrations: 'users/registrations'}
   resources :users do
-    resource :profile
+    resource :profile 
   end
   resources :contacts
   get '/about' => 'pages#about'
@@ -60,4 +60,5 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-end
+  end
+
